@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach for UA</title>
+    <meta name="description" content="Освітньо-громадська організація. Формуємо майбутнє дітей.">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <section class="invest">
+        <div class="container invest__container">
+            <div class="invest__heading">
+                <span class="heading__sub">інвестиції</span>
+                <h2 class="heading_2">зробити
+                    <br>— інвестиції у програму</h2>
+                <h5 class="heading_5">виберіть спосіб оплати</h5>
+            </div>
+
+            <form action="/action_page.php" method="post" class="form invest__form">
+                <div class="radio-set">
+                    <div>
+                        <input type="radio" id="card" name="payment_way" value="Банківська карта">
+                        <label class="radio-set__label" for="card">Банківська карта</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="paypal" name="payment_way" value="PayPal">
+                        <label class="radio-set__label" for="paypal">PayPal</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bill" name="payment_way" value="Банківська платіжна квитанція">
+                        <label class="radio-set__label" for="bill">Банківська платіжна квитанція</label>
+                    </div>
+                </div>
+                
+                <h5 class="heading5">банківська карта</h5>
+                
+                <div class="form__amount">
+                    <div class="btn_group">
+                        <button class="btn_group__button btn_group__btn1">50 000</button>
+                        <button class="btn_group__button btn_group__btn2">30 000</button>
+                        <button class="btn_group__button btn_group__btn3">10 000</button>
+                        <button class="btn_group__button btn_group__btn4">1 000</button>
+                    </div>
+                    <input class="form__input form__input_number" type="number" min="0" id="amount" name="amount" placeholder="Інша сума"><br><br>
+                </div>
+
+                <div class="radio-set">
+                    <div>
+                        <input type="radio" id="monthly" name="payment_period" value="Щомісячно">
+                        <label class="radio-set__label" for="monthly">Щомісячно</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="once" name="payment_period" value="Одноразово">
+                        <label class="radio-set__label" for="once">Одноразово</label>
+                    </div>
+                </div>
+
+                <label class="form__label" for="name">ім’я</label><br>
+                <input class="form__input form__input_no-border" type="text" id="name" name="name" required autocomplete="name" placeholder="Напишіть ваше ім’я"><br><br>
+                
+                <label class="form__label" for="email">Email</label><br>
+                <input class="form__input form__input_no-border" type="email" id="email" name="email" required autocomplete="email" placeholder="Напишіть вашу електронну адресу"><br><br>
+                
+                <label class="form__label form__label_checkbox" for="agreement">Я приймаю <a class="form__link" href="#">Договір оферти</a>
+                    <input class="form__input_checkbox" type="checkbox" id="agreement" name="agreement" value="agreement">
+                    <span class="checkbox_checkmark"></span>
+                </label><br>
+                <label class="form__label form__label_checkbox" for="privat_info">Я приймаю <a class="form__link" href="#">Угоду про використання персональних даних</a>
+                    <input class="form__input_checkbox" type="checkbox" id="privat_info" name="privat_info" value="privat_info">
+                    <span class="checkbox_checkmark"></span>
+                </label><br>
+
+                <input class="button form__button" type="submit" value="відправити">
+            </form>
+        </div>
+    </section>
+</body>
